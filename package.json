@@ -19,6 +19,9 @@
   ],
   "author": "reloverse",
   "license": "MPL-2.0",
+  "engines": {
+    "node": ">=22.4.0"
+  },
   "bugs": {
     "url": "https://github.com/reloverse/wisp-client.js/issues"
   },
