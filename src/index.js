@@ -307,3 +307,5 @@ export class WispConnection extends EventTarget {
     }
   }
 }
+
+export default {WispConnection, WispStream, packet_names, packet_types, close_codes}

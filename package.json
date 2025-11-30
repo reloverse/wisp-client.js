@@ -1,0 +1,30 @@
+{
+  "name": "wisp-client",
+  "version": "0.0.1",
+  "description": "A MPL Licensed client-side Wisp implementation.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reloverse/wisp-client.js.git"
+  },
+  "keywords": [
+    "wisp",
+    "mpl",
+    "proxy",
+    "ws",
+    "websocket"
+  ],
+  "author": "reloverse",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/reloverse/wisp-client.js/issues"
+  },
+  "homepage": "https://github.com/reloverse/wisp-client.js#readme",
+  "devDependencies": {
+    "webpack": "^5.103.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
