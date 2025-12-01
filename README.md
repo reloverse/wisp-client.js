@@ -11,7 +11,7 @@ An example html (with the file pinned to commit 3029a85, replace with main if yo
     <title>Wisp Test</title>
   </head>
   <body>
-    <h1>Wips Test</h1>
+    <h1>Wisp Test</h1>
     <pre id="output"></pre>
     <script type="module">
       import WispClient from "https://cdn.jsdelivr.net/gh/reloverse/wisp-client.js@3029a85/src/index.min.js";
