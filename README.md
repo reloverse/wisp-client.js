@@ -2,7 +2,7 @@
 
 A Wisp 1.2 compliant that runs in the web licensed under the [MPL](LICENSE) that is also not written in TypeShit™!
 
-An example html (with the file pinned to commit aa1d8e3, replace with dist if you want but I would pin to a hash incase something breaks when I release new code) example would be:
+An example html (with the file pinned to commit `aa1d8e3`, replace with dist if you want but I would pin to a hash incase something breaks when I release new code) example would be:
 ```html
 <!DOCTYPE html>
 <html>
