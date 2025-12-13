@@ -1,0 +1,4 @@
+/**
+ * @fileoverview Wisp 1.2 compliant library that is also not written in TypeShit™
+ * @license MPL-2.0
+ */
