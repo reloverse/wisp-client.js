@@ -66,4 +66,4 @@ Connection: close
 });
 ```
 
-Running below Node v22.4.0 is no supported as the WebSocket API was not marked stable. It will LIKELY work fine from node 22, and in node 21 you will need to run with `--experimental-websocket`. Before that you will have to monkeypatch something on if you want it to work, I would recommed running Node v24 LTS.
+Running below Node v22.4.0 is not supported as the WebSocket API was not marked stable. It will LIKELY work fine from node 22, and in node 21 you will need to run with `--experimental-websocket`. Before that you will have to monkeypatch something on if you want it to work, I would recommed running Node v24 LTS.
