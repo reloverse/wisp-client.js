@@ -14,7 +14,7 @@ An example html (with the file pinned to commit aa1d8e3, replace with dist if yo
   <body>
     <h1>Wisp Test</h1>
     <pre id="output"></pre>
-    <script type="module">
+    <script>
       const output = document.getElementById('output');
       const wispUrl = "wss://wisp.mercurywork.shop/";
       const conn = new WispClient.WispConnection(wispUrl);
