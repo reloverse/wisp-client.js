@@ -25,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/reloverse/wisp-client.js/issues"
   },
-  "homepage": "https://github.com/reloverse/wisp-client.js#readme"
+  "homepage": "https://github.com/reloverse/wisp-client.js#readme",
+  "devDependencies": {
+    "webpack": "^5.103.0",
+    "webpack-cli": "^6.0.1"
+  }
 }
