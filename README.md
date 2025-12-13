@@ -2,19 +2,19 @@
 
 A Wisp 1.2 compliant that runs in the web licensed under the [MPL](LICENSE) that is also not written in TypeShit™!
 
-An example html (with the file pinned to commit 3029a85, replace with main if you want but I would pin to a hash incase something breaks when I release new code) example would be:
+An example html (with the file pinned to commit aa1d8e3, replace with dist if you want but I would pin to a hash incase something breaks when I release new code) example would be:
 ```html
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>Wisp Test</title>
+    <script src="https://cdn.jsdelivr.net/gh/reloverse/wisp-client.js@aa1d8e3/wisp-client.bundle.js"></script>
   </head>
   <body>
     <h1>Wisp Test</h1>
     <pre id="output"></pre>
     <script type="module">
-      import WispClient from "https://cdn.jsdelivr.net/gh/reloverse/wisp-client.js@3029a85/src/index.min.js";
       const output = document.getElementById('output');
       const wispUrl = "wss://wisp.mercurywork.shop/";
       const conn = new WispClient.WispConnection(wispUrl);
