@@ -29,5 +29,8 @@
   "devDependencies": {
     "webpack": "^5.103.0",
     "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@reclaimprotocol/tls": "^0.1.2"
   }
 }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Wisp Test</title>
+    <script src="https://cdn.jsdelivr.net/gh/reloverse/wisp-client.js@dist/index.bundle.js"></script>
+  </head>
+  <body>
+    <pre id="output"></pre>
+    <script>
+      const output = document.getElementById('output');
+      const wispUrl = "wss://wisp.mercurywork.shop/";
+      const conn = new WispClient.WispConnection(wispUrl);
+
+      conn.addEventListener("open", () => {
+      const host = "httpbin.org";
+      const stream = new WispClient.TLSWrap(conn.create_stream(host, 443, "tcp"));
+      const request = "GET /get HTTP/1.1\r\n" +
+                      `Host: ${host}\r\n` +
+                      "Connection: close\r\n" +
+                      "User-Agent: Mozilla/5.0\r\n" +
+                      "\r\n";
+
+        stream.addEventListener("message", (event) => {
+          output.textContent += event.data
+        });
+        stream.addEventListener("open", ()=>stream.send(new TextEncoder().encode(request)));
+      });
+    </script>
+  </body>
+</html>

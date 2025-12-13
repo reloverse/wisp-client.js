@@ -4,7 +4,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'wisp-client.bundle.js',
+    filename: 'index.bundle.js',
     globalObject: 'this',
     library: {
       name: 'WispClient',
